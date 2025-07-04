@@ -1,0 +1,306 @@
+[
+  {
+    "id": 1,
+    "name": "Puff SleeveTop",
+    "type": "top",
+    "mode": "normal",
+    "baseImage": "/static/images/dress1.png",
+    "colors": ["red", "blue", "green", "orange"]
+  },
+  {
+    "id": 2,
+    "name": "Basic Top",
+    "type": "top",
+    "mode": "puffed",
+    "baseImage": "/static/images/dress2.png",
+    "colors": ["pink", "green", "orange", "purple"]
+  },
+  {
+    "id": 3,
+    "name": "Puff Sleeve Shirt",
+    "type": "shirt",
+    "mode": "normal",
+    "baseImage": "/static/images/shirt3_black.png",
+    "colors": ["black", "brown"]
+  },
+  {
+    "id": 4,
+    "name": "Green Skirt",
+    "type": "skirt",
+    "mode": "normal",
+    "baseImage": "/static/images/dress4.png",
+    "colors": ["green", "blue", "pink", "yellow"]
+  },
+  {
+    "id": 5,
+    "name": "Skirt With Ribbon",
+    "type": "skirt",
+    "mode": "normal",
+    "baseImage": "/static/images/dress5.png",
+    "colors": ["red", "blue", "brown", "violet"]
+  },
+  {
+    "id": 6,
+    "name": "Brown Top",
+    "type": "top",
+    "mode": "normal",
+    "baseImage": "/static/images/top6_brown.png",
+    "colors": ["brown"]
+  },
+  {
+    "id": 7,
+    "name": "Full Sleeve Top",
+    "type": "top",
+    "mode": "normal",
+    "baseImage": "/static/images/top7_blue.png",
+    "colors": ["blue", "green", "maroon", "orange"]
+  },
+  {
+    "id": 8,
+    "name": "Crop Shirt",
+    "type": "shirt",
+    "mode": "normal",
+    "baseImage": "/static/images/shirt8_blue.png",
+    "colors": ["blue", "black"]
+  },
+  {
+    "id": 9,
+    "name": "Floral Top",
+    "type": "top",
+    "mode": "normal",
+    "baseImage": "/static/images/top9_pink.png",
+    "colors": ["pink", "peach"]
+  },
+  {
+    "id": 10,
+    "name": "Desiner Top",
+    "type": "top",
+    "mode": "puffed",
+    "baseImage": "/static/images/top10_white.png",
+    "colors": ["white"]
+  },
+  {
+    "id": 11,
+    "name": "Designer Jeans",
+    "type": "jeans",
+    "baseImage": "/static/images/dress11.jpg",
+    "colors": ["black"]
+  },
+  {
+    "id": 12,
+    "name": "Green Trousers",
+    "type": "trousers",
+    "baseImage": "/static/images/dress12.jpg",
+    "colors": ["green"]
+  },
+  {
+    "id": 13,
+    "name": "Short Sleeve Top",
+    "type": "top",
+    "baseImage": "/static/images/dress13.png",
+    "colors": ["blue", "yellow", "black", "peach"]
+  },
+  {
+    "id": 14,
+    "name": "Party Top",
+    "type": "top",
+    "baseImage": "/static/images/top14_red.png",
+    "colors": ["red", "green", "pink", "black"]
+  },
+  {
+    "id": 15,
+    "name": "Summer Top",
+    "type": "top",
+    "baseImage": "/static/images/top15_yellow.png",
+    "colors": ["yellow", "blue", "orange", "pink"]
+  },
+  {
+    "id": 16,
+    "name": "Sleeveless Top",
+    "type": "top",
+    "baseImage": "/static/images/top16_brown.png",
+    "colors": ["brown"]
+  },
+  {
+    "id": 17,
+    "name": "Corset Top",
+    "type": "top",
+    "baseImage": "/static/images/top17_blue.png",
+    "colors": ["blue", "white"]
+  },
+  {
+    "id": 18,
+    "name": "Cute Top",
+    "type": "top",
+    "baseImage": "/static/images/top18_blue.png",
+    "colors": ["blue"]
+  },
+  {
+    "id": 19,
+    "name": "Multi-color Top",
+    "type": "top",
+    "baseImage": "/static/images/top19_green.png",
+    "colors": ["green", "brown"]
+  },
+  {
+    "id": 20,
+    "name": "Purple Top",
+    "type": "top",
+    "baseImage": "/static/images/top20_purple.png",
+    "colors": ["purple"]
+  },
+  {
+    "id": 21,
+    "name": "Full Top",
+    "type": "top",
+    "baseImage": "/static/images/top21_green.png",
+    "colors": ["green"]
+  },
+  {
+    "id": 22,
+    "name": "Full Sleeve Corset Top",
+    "type": "top",
+    "baseImage": "/static/images/top22_maroon.png",
+    "colors": ["maroon"]
+  },
+  {
+    "id": 23,
+    "name": "Floral Dress",
+    "type": "dress",
+    "baseImage": "/static/images/dress23_black.png",
+    "colors": ["black"]
+  },
+  {
+    "id": 24,
+    "name": "Full Sleeve Cute Top",
+    "type": "top",
+    "baseImage": "/static/images/top24_red.png",
+    "colors": ["red", "pink", "yellow"]
+  },
+  {
+    "id": 25,
+    "name": "Formal Shirt",
+    "type": "shirt",
+    "baseImage": "/static/images/shirt25_blue.png",
+    "colors": ["blue", "green"]
+  },
+  {
+    "id": 26,
+    "name": "Party Shirt",
+    "type": "shirt",
+    "baseImage": "/static/images/shirt26_brown.png",
+    "colors": ["brown", "peach"]
+  },
+  {
+    "id": 27,
+    "name": "Multi-color Shirt",
+    "type": "shirt",
+    "baseImage": "/static/images/shirt27_blue.png",
+    "colors": ["blue", "white"]
+  },
+  {
+    "id": 28,
+    "name": "Casual Shirt",
+    "type": "shirt",
+    "baseImage": "/static/images/shirt28_brown.png",
+    "colors": ["brown", "blue"]
+  },
+  {
+    "id": 29,
+    "name": "Pink Shirt",
+    "type": "shirt",
+    "baseImage": "/static/images/shirt29_pink.png",
+    "colors": ["pink"]
+  },
+  {
+    "id": 30,
+    "name": "Jeggins",
+    "type": "jeans",
+    "baseImage": "/static/images/dress30.jpg",
+    "colors": ["cream"]
+  },
+  {
+    "id": 31,
+    "name": "Black Jeggins With Chain",
+    "type": "jeans",
+    "baseImage": "/static/images/dress31.jpg",
+    "colors": ["black"]
+  },
+  {
+    "id": 32,
+    "name": "Black Jeans",
+    "type": "jeans",
+    "baseImage": "/static/images/dress32.jpg",
+    "colors": ["black"]
+  },
+  {
+    "id": 33,
+    "name": "Brown Trousers",
+    "type": "trousers",
+    "baseImage": "/static/images/dress33.jpg",
+    "colors": ["brown"]
+  },
+  {
+    "id": 34,
+    "name": "Black Trousers",
+    "type": "trousers",
+    "baseImage": "/static/images/dress34.jpg",
+    "colors": ["black"]
+  },
+  {
+    "id": 35,
+    "name": "Pink Jeans",
+    "type": "jeans",
+    "baseImage": "/static/images/dress35.jpg",
+    "colors": ["pink"]
+  },
+  {
+    "id": 36,
+    "name": "Light Brown Trousers",
+    "type": "trousers",
+    "baseImage": "/static/images/dress36.jpg",
+    "colors": ["brown"]
+  },
+  {
+    "id": 37,
+    "name": "White Trousers",
+    "type": "trousers",
+    "baseImage": "/static/images/dress37.jpg",
+    "colors": ["white"]
+  },
+  {
+    "id": 38,
+    "name": "Purple Trousers",
+    "type": "trousers",
+    "baseImage": "/static/images/dress38.jpg",
+    "colors": ["purple"]
+  },
+  {
+    "id": 39,
+    "name": "Straight Black Trousers",
+    "type": "trousers",
+    "baseImage": "/static/images/dress39.jpg",
+    "colors": ["black"]
+  },
+  {
+    "id": 40,
+    "name": "Orange Trousers",
+    "type": "trousers",
+    "baseImage": "/static/images/trousers40_orange.png",
+    "colors": ["orange"]
+  },
+  {
+    "id": 41,
+    "name": "Blue Trousers",
+    "type": "trousers",
+    "baseImage": "/static/images/dress41.jpg",
+    "colors": ["blue"]
+  },
+  {
+    "id": 42,
+    "name": "Navy Blue Jeans",
+    "type": "jeans",
+    "baseImage": "/static/images/dress42.jpg",
+    "colors": ["blue"]
+  }
+]

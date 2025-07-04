@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aadikriti Apparels</title>
+    <link rel="stylesheet" href="/static/css/style.css" />
+</head>
+
+<body>
+    <header class="main-header">
+        <img src="/static/images/banner.png" alt="Banner" class="banner" />
+        <img src="/static/images/contact.jpg" class="banner"/>
+    </header>
+    <nav class="main-menu">
+        <button class="dropbtn" onclick="toggleMenu()">☰ Menu</button>
+        <div id="menuDropdown" class="dropdown-content hidden">
+            <div class="sub-dropdown">
+                <button onclick="toggleSubMenu('clothesSubMenu')">Clothes</button>
+                <div id="clothesSubMenu" class="sub-dropdown-content hidden">
+                    <button onclick="filterByCategory('top'); closeAllMenus()">Tops</button>
+                    <button onclick="filterByCategory('shirt'); closeAllMenus()">Shirts</button>
+                    <button onclick="filterByCategory('dress'); closeAllMenus()">Dresses</button>
+                    <button onclick="filterByCategory('jeans'); closeAllMenus()">Jeans</button>
+                    <button onclick="filterByCategory('trousers'); closeAllMenus()">Trousers</button>
+                    <button onclick="filterByCategory('skirt'); closeAllMenus()">Skirts</button>
+                    <!-- <button onclick="filterByCategory('traditional'); closeAllMenus()">Traditional Wear</button> -->
+                </div>
+            </div>
+            <div class="sub-dropdown">
+                <button onclick="toggleSubMenu('accessoriesSubMenu')">Accessories</button>
+                <div id="accessoriesSubMenu" class="sub-dropdown-content hidden">
+                    <button onclick="alert('Earrings coming soon'); closeAllMenus()">Earrings</button>
+                    <button onclick="alert('Necklace coming soon'); closeAllMenus()">Necklace</button>
+                    <button onclick="alert('Purse coming soon'); closeAllMenus()">Purse</button>
+                    <button onclick="alert('Footwear coming soon'); closeAllMenus()">Footwear</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <button onclick>Get Recommendations</button>
+
+    <h1 style="text-align: center;">Shop By Category</h1>
+    <nav class="category-bar">
+        <button onclick="filterByCategory('all')">All</button>
+        <button onclick="filterByCategory('top')">Tops</button>
+        <button onclick="filterByCategory('shirt')">Shirts</button>
+        <button onclick="filterByCategory('dress')">Dresses</button>
+        <button onclick="filterByCategory('jeans')">Jeans</button>
+        <button onclick="filterByCategory('trousers')">Trousers</button>
+        <button onclick="filterByCategory('skirt')">Skirts</button>
+        <!-- <button onclick="filterByCategory('traditional')">Traditional Wear</button> -->
+    </nav>
+
+    <div id="app"></div>
+
+    <footer>
+        <p>Contact us: <a href="mailto:admin@aadikriti.com">admin@aadikriti.com</a></p>
+        <p>69/6A, Ground Floor, Najafgarh Road Industrial Area, New Delhi - 110015</p>
+    </footer>
+
+    <script src="/static/js/main.js"></script>
+</body>
+
+</html>

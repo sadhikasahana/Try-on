@@ -1,0 +1,424 @@
+/* === GLOBAL RESET === */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: #f9f9f9;
+  height: 100%;
+  color: #333;
+}
+
+/* === MAIN WRAPPER === */
+.main-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* === NAVIGATION === */
+nav {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+nav button {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #444;
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+
+/* === SECTION TOGGLING === */
+.spa-section {
+  display: none;
+}
+
+.active-section {
+  display: block;
+}
+
+/* === HEADINGS === */
+h1 {
+  text-align: center;
+  font-size: 28px;
+  color: #6200ea;
+  margin-bottom: 40px;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 30px;
+  color: #222;
+}
+
+/* === UPLOAD CARD === */
+.upload-wrapper {
+  display: flex;
+  justify-content: center;  /* Align box to the left */
+  align-items: flex-start;          /* Center vertically */
+  height: 100vh;                /* Full viewport height */
+  padding-left: 100px;          /* <-- Add gap from the left */
+}
+
+.upload-card {
+  width: 400px;
+  padding: 20px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  margin-top: 50px; /* Add gap from top */
+  text-align: center;
+  transition: height 0.3s ease; /* Optional: smooth height change */
+}
+
+
+
+.upload-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.upload-title img {
+  width: 40px;
+  height: 40px;
+}
+
+.upload-title h2 {
+  margin: 10px 0 0 0;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.upload-title span {
+  color: #7b1fa2;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+/* === UPLOAD TIPS LINK === */
+.upload-tips {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin: 10px auto;
+  font-size: 14px;
+}
+
+.upload-tips img {
+  height: 18px;
+  width: 18px;
+}
+
+.tips-link {
+  color: #6200ea;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.tips-link:hover {
+  text-decoration: underline;
+}
+
+/* === UPLOAD BUTTON === */
+.upload-btn {
+  display: inline-block;
+  background-color: #6200ea;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.upload-btn img {
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+.upload-btn:hover {
+  background-color: #4500b5;
+}
+
+/* === PREVIEW IMAGE === */
+#preview-container {
+  margin-top: 30px;
+  text-align: center;
+}
+
+#uploadedImage {
+  width: 100%; /* So it fits inside the .upload-card */
+  height: auto; /* Maintain aspect ratio */
+  max-height: 500px; /* Optional: avoid extremely tall images */
+  border-radius: 10px;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+}
+
+
+/* === RECOMMEND BUTTON === */
+.recommend-btn {
+  margin-top: 20px;
+  background-color: #03dac5;
+  color: white;
+  padding: 10px 22px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.recommend-btn:hover {
+  background-color: #029e93;
+}
+
+.button-row {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+
+/* === TIPS SECTION === */
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  list-style-position: inside;
+}
+
+ul li {
+  margin-bottom: 16px;
+  line-height: 1.6;
+}
+
+.tips-wrapper {
+  display: flex;
+  justify-content: center;    /* center horizontally */
+  margin-top: 30px;
+  padding: 0 20px;             /* some side spacing */
+}
+
+.tips {
+  background-color: #fff;
+  padding: 30px 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  max-width: 600px;
+  width: 100%;
+  line-height: 1.6;
+}
+
+
+.tip-icon-group {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.tip-image {
+  width: 80px;
+  height: 80px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.tip-cross,
+.tip-check {
+  width: 20px;
+  height: 20px;
+  margin-left: -12px;
+  margin-top: -12px;
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 20px;
+  color: #6200ea;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+/* === RECOMMENDATIONS SECTION === */
+.section {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+#user-photo {
+  display: block;
+  margin: 0 auto;
+  border: 3px solid #888;
+  padding: 5px;
+  border-radius: 10px;
+  max-width: 300px;
+  background-color: #fff;
+}
+
+#accessory-rows {
+  display: flex;
+  flex-direction: column;    /* stack rows vertically */
+  gap: 20px;                 /* vertical gap between rows */
+}
+
+/* make each accessory-row display its contents in a row */
+.accessory-row {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 130px;                 /* space between items in the row */
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.accessory-row > h4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+
+
+/* container for each accessory inside the row */
+.accessory-row > div {
+  text-align: center;
+}
+
+.accessory-item {
+  position: relative;
+  width: 120px;              /* same width for all accessory boxes */
+  height: 160px;             /* same height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 2px;
+  padding-bottom: 4px;
+  margin: 20px;
+  border: 1px dashed #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+  overflow: hidden;
+  margin-left: 30px;
+}
+
+/* Title inside each box */
+.accessory-item strong {
+  font-size: 14px;
+  margin-bottom: 6px;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+.accessory-preview {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 160px;
+  border: 1px dashed #ccc;
+  border-radius: 8px;
+  margin: 5px;
+  box-sizing: border-box;
+}
+
+.accessory-preview label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 0;
+}
+
+.accessory-preview input[type="checkbox"] {
+  margin: 0;
+}
+
+.accessory-preview img {
+  max-width: 80px;
+  max-height: 80px;
+  object-fit: contain;
+}
+
+.accessory-name {
+  font-size: 0.85rem;
+  margin-bottom: 24px;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.accessory-item > .accessory-checkbox {
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  z-index: 2;
+}
+
+
+
+.apply-btn-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#result {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+#result img {
+  margin-top: 20px;
+  max-width: 90%;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* === ACTION BUTTONS UNDER RECOMMENDATIONS === */
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+.actions button {
+  background-color: #6200ea;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.actions button:hover {
+  background-color: #4500b5;
+}
+

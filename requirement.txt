@@ -1,0 +1,10 @@
+flask
+pillow
+numpy
+opencv-python
+mediapipe
+gunicorn
+tensorflow>=2.10
+scikit-learn
+opencv-python-headless
+matplotlib

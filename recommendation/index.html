@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Style AI - Accessory Overlay</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    
+    <!-- Upload Section -->
+    <section id="home" class="spa-section active-section">
+     <div class="upload-wrapper" >
+      <div class="upload-card">
+        <div class="upload-title">
+          <h1>🧫 Style Your Fashion</h1>
+          <img src="https://img.icons8.com/ios-filled/50/camera.png" alt="camera" />
+          <h2>Upload <span>Your</span> Photo</h2>
+        </div>
+
+        <input type="file" id="imageupload" accept="image/*">
+
+        <div class="upload-tips">
+          <img src="https://img.icons8.com/ios-filled/20/6200ea/info.png" alt="Tips Icon" />
+          <span class="tips-link" onclick="showSection('tips')" style="cursor: pointer; color: blue;">Upload Tips</span>
+        </div>
+
+        <form id="uploadForm">
+          <label for="imageUpload" class="upload-btn">
+            <img src="https://img.icons8.com/material-rounded/24/ffffff/upload.png" alt="Upload Icon" />
+            Upload Image
+          </label>
+          <input type="file" id="imageUpload" name="image" accept="image/*" onchange="previewImage(event)" style="display:none;">
+
+          <div id="preview-container">
+            <img id="uploadedImage" src="#" alt="Your-Image" style="display: none;"/>
+          </div>
+
+          <button type="submit" class="recommend-btn">Get Recommendations</button>
+        </form>
+      </div>
+     </div> 
+    </section>
+
+    <!-- Upload Tips Section -->
+   
+    <div class="tips-wrapper">
+     <section id="tips" class="spa-section">
+       <h1>Upload Tips</h1>
+       <p>Follow these tips to ensure Your image uploads Correctly:</p>
+       <ul>
+         <li>
+           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTt5YC5YvVXYl9awHEz3nO6VlDuTLTcfSqXJg&s" alt="Blurry" class="tip-image" />
+           <img src="https://img.icons8.com/color/48/delete-sign--v1.png" class="tip-cross" /> Ensure your face and outfit are clearly visible.
+          </li>
+          <li>Use high-resolution images (512×512 pixels or more).</li>
+          <li>Avoid cluttered or dark backgrounds.</li>
+          <li>Only JPG, PNG, or WEBP formats are accepted.</li>
+          <li>
+            <span class="tip-icon-group">
+              <img src="https://c8.alamy.com/comp/PFHHGA/woman-standing-upright-hands-beside-body-feet-slightly-apart-facing-forward-PFHHGA.jpg" class="tip-image" />
+              <img src="https://img.icons8.com/color/48/ok--v1.png" class="tip-check" />
+            </span>
+            Stand straight, facing forward, with proper lighting.
+          </li>
+        </ul>
+        <p><span onclick="showSection('home')" style="cursor:pointer; color:blue;">← Back to Upload Page</span></p>
+      </section>
+    </div>
+
+    <!-- Recommendations Section -->
+    <section id="recommendations" class="spa-section">
+      <h2>Your Uploaded Photo</h2>
+      <img id="user-photo" src="" alt="User Photo" />
+
+      <h2>Recommended Accessories</h2>
+      <div id="accessory-rows"></div>
+      <div class="apply-btn-wrapper"> 
+        <button id="applyBtn" class="recommend-btn">Apply Accessories</button>
+      </div>
+
+
+      <div id="result" style="display: none;">
+        <h2>✨ Final Result with Accessories Applied</h2>
+        <img id="result-img" src="" alt="Result Image" />
+      </div>
+
+      <div class="actions">
+        <button onclick="showSection('home')">← Back to Upload</button>
+        <button onclick="reapplyAccessories()">Re-Apply Accessories</button>
+      </div>
+
+    </section>
+  </div>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

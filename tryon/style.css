@@ -1,0 +1,131 @@
+body {
+    font-family: initial;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+}
+
+header {
+    text-align: left;
+    color: #ffffff;
+}
+
+.banner {
+    width: 40%;
+    max-height: 350px;
+    object-fit: cover;
+}
+
+.main-header {
+    background: #000000;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.header-content {
+    font-style: oblique;
+    text-align: center;
+}
+
+.shop-button {
+    background-color: #C9B037;
+    font-style: oblique;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.category-bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: #f792c6;
+    padding: 10px;
+}
+
+.category-bar button {
+    margin: 5px;
+    padding: 10px 20px;
+    background: #000;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.category-bar button:hover {
+    background: #444;
+}
+
+.dress-gallery,
+.color-images,
+.body-models {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.dress-item {
+    margin: 15px;
+    text-align: center;
+}
+
+.preview-image,
+.result-image {
+    max-width: 300px;
+    margin: 20px auto;
+    display: block;
+}
+
+footer {
+    background: #000;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.main-menu {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
+}
+
+.dropbtn {
+    background-color: #000;
+    color: white;
+    padding: 10px 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content,
+.sub-dropdown-content {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 5px;
+    width: 100px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sub-dropdown-content button {
+    background: none;
+    border: none;
+    padding: 6px 10px;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+}
+
+.sub-dropdown-content button:hover {
+    background-color: #eee;
+}
+
+.hidden {
+    display: none;
+}
